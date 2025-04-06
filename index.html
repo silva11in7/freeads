@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdsFree Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span class="brand">AdsFree</span>
+                <span class="version">v1.2.1</span>
+            </div>
+            <div class="status-right">
+                <div class="profile">
+                    <span class="profile-name">ayres</span>
+                    <i data-lucide="user" class="icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="menu-section">
+                    <div class="menu-item">
+                        <i data-lucide="shield" class="icon"></i>
+                        <span>Início</span>
+                    </div>
+                </div>
+                <div class="menu-separator"></div>
+                <div class="menu-section">
+                    <button class="menu-button">
+                        <i data-lucide="credit-card" class="icon"></i>
+                        <span>Cartões</span>
+                    </button>
+                </div>
+                <div class="menu-separator"></div>
+                <div class="system-status-sidebar">
+                    <div class="status-item">
+                        <span class="label">Network:</span>
+                        <span class="value">ONLINE</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">Security:</span>
+                        <span class="value">ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="header">
+                    <h1>Cartões Disponíveis</h1>
+                    <button id="toggleMenu">
+                        <i data-lucide="menu" class="icon"></i>
+                    </button>
+                </div>
+                <div class="select-card-text">Escolha um cartão</div>
+                <div class="cards-grid" id="cardsContainer">
+                    <!-- Cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
